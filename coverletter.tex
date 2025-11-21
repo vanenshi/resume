@@ -1,0 +1,142 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+% \colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+\definecolor{awesome}{HTML}{000000}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{./examples/profile}
+\name{Amir Hossein}{Shekari}
+\position{Software Engineer}
+% \address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+
+\mobile{(+98) 903 233 8887}
+\email{vanenshi@gmail.com}
+\homepage{vanenshi.com}
+\github{vanenshi}
+\linkedin{vanenshi}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {KOBIL\\Worms, Rheinland Pfalz}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Full Stack Developer}
+% How the letter is opened
+\letteropening{Dear Human Resource Manager}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+% \letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Amir Hossein Shekari~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+I am writing to express my strong interest in the Full Stack Developer position as advertised on KOBIL. With over 3 years of experience in software development, including extensive knowledge in back-end and front-end technologies, I am confident in my ability to support KOBIL’s cutting-edge projects
+
+\lettersection{Why KOBIL?}
+Recent developments, such as the introduction of the world’s first online transaction verification device, the signPod, and the Istanbul SuperApp, demonstrate KOBIL’s commitment to remain at the forefront of technology in the areas of reference and centralized monitoring implementation, and building mobile applications from scratch My experience, fits perfectly with KOBIL’s forward-thinking approach
+
+In my current position within Mozayedegar, I have been able to implement a CI/CD pipeline using Docker, which demonstrates my commitment to embracing the latest technologies. This dovetails well with KOBIL’s strengths in its cloud-based infrastructure and state-of-the-art detection systems.
+
+\lettersection{Why Me?}
+As a Full Stack Developer I have a proven track record of collaborating with cross-functional teams, writing clean and efficient code using Node.js and React.js, ensuring applications is developed and runs on different machines server-side CSS preprocessors, databases (SQL) used for processing). and NoSQL), my expertise in RESTful APIs positions me well to contribute to KOBIL’s continued success.
+
+ KOBIL’s commitment to continuing education and collaboration with top research universities aligns with my commitment to continuing education. My Bachelor’s degree in Computer Science, along with my experience in a variety of development environments gave me the skills necessary to work in the challenging and innovative environment of KOBIL.
+
+I am excited for the opportunity to contribute to KOBIL’s next generation of digital identity and data security technology Thank you for considering my application. I look forward to being able to assess how my skills and experience align with the goals of  KOBIL.
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
